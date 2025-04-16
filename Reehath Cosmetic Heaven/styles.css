@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+.overlay {
+  background-color: rgba(128, 0, 128, 0.7);
+  min-height: 100vh;
+  padding: 1em;
+}
+header, footer {
+  text-align: center;
+  padding: 1em;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin-bottom: 2em;
+}
+nav a {
+  color: white;
+  background: #800080;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.products, .catalogue {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1em;
+}
+.product, .about {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1em;
+  border-radius: 10px;
+  text-align: center;
+}
+.product img {
+  width: 100%;
+  border-radius: 10px;
+  height: auto;
+}
+button {
+  background: white;
+  color: #800080;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 5px;
+  margin-top: 0.5em;
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+}
